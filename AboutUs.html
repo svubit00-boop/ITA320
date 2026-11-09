@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>من نحن</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+/* ===== تنسيق خاص بصفحة من نحن فقط ===== */
+
+/* فقرة التعريف */
+.intro { background-color: var(--soft); border-right: 5px solid var(--primary); border-radius: 12px; padding: 16px 22px; margin: 15px 0 25px 0; }
+
+/* بطاقات التواصل */
+.contact-grid { display: flex; flex-wrap: wrap; gap: 14px; margin: 15px 0 25px 0; }
+.contact-item { flex: 1; min-width: 220px; text-align: center; background-color: #ffffff; border: 1px solid var(--line); border-top: 4px solid var(--primary); border-radius: 12px; padding: 14px 16px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
+.contact-label { display: block; color: var(--muted); font-size: 13px; }
+.contact-value { display: block; color: var(--text); font-size: 17px; font-weight: bold; direction: ltr; }
+
+/* بطاقات الفروع */
+.branches { display: flex; flex-wrap: wrap; gap: 16px; margin: 15px 0 25px 0; }
+.branch { flex: 1; min-width: 240px; background-color: #ffffff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); }
+.branch-name { margin: 0; padding: 12px 18px; background: linear-gradient(90deg, var(--primary-dark), var(--primary)); color: #ffffff; font-size: 19px; border-right: none; }
+.branch-body { padding: 14px 18px; }
+.branch-address { margin: 0 0 12px 0; color: var(--muted); }
+.branch-hours { background-color: var(--soft); border-radius: 10px; padding: 10px 14px; text-align: center; }
+.hours-label { display: block; color: var(--muted); font-size: 13px; }
+.hours-time { display: block; color: var(--primary); font-size: 18px; font-weight: bold; }
+
+/* شريط أيام الأسبوع */
+.week { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0 10px 0; }
+.day { flex: 1; min-width: 90px; text-align: center; border-radius: 10px; padding: 10px 6px; font-weight: bold; }
+.day.open { background-color: #ecfdf5; color: #047857; border: 1px solid #6ee7b7; }
+.day.closed { background-color: #fef2f2; color: #b91c1c; border: 1px solid #fca5a5; }
+.day small { display: block; font-weight: normal; font-size: 12px; }
+.week-note { color: var(--muted); font-size: 14px; }
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+<div id="header"><h1>مكتب الأمان لتأجير السيارات</h1></div>
+<div id="nav">
+<a href="home.html">الرئيسية</a>
+<a href="AboutUs.html" class="active">من نحن</a>
+<a href="Cars.html">السيارات</a>
+</div>
+<div id="content">
+
+<h2>معلومات عامة عن المكتب</h2>
+<div class="intro">
+<p>مكتب الأمان لتأجير السيارات تأسس عام 2015 في دمشق، ويقدم خدمة تأجير سيارات حديثة بأسعار يومية واضحة، مع صيانة دورية وتأمين شامل لجميع السيارات.</p>
+</div>
+
+<h2>معلومات التواصل</h2>
+<div class="contact-grid">
+<div class="contact-item"><span class="contact-label">الهاتف</span><span class="contact-value">011-1234567</span></div>
+<div class="contact-item"><span class="contact-label">الموبايل</span><span class="contact-value">0933000000</span></div>
+<div class="contact-item"><span class="contact-label">البريد الإلكتروني</span><span class="contact-value">info@alaman-rental.example</span></div>
+</div>
+
+<h2>مواقع الفروع وأوقات الدوام</h2>
+<div class="branches">
+
+<div class="branch">
+<h3 class="branch-name">فرع دمشق</h3>
+<div class="branch-body">
+<p class="branch-address">شارع بغداد، قرب ساحة العباسيين</p>
+<div class="branch-hours"><span class="hours-label">أوقات الدوام</span><span class="hours-time">8:00 صباحاً - 8:00 مساءً</span></div>
+</div>
+</div>
+
+<div class="branch">
+<h3 class="branch-name">فرع حلب</h3>
+<div class="branch-body">
+<p class="branch-address">حي الفرقان، شارع الخالدية</p>
+<div class="branch-hours"><span class="hours-label">أوقات الدوام</span><span class="hours-time">8:00 صباحاً - 7:00 مساءً</span></div>
+</div>
+</div>
+
+<div class="branch">
+<h3 class="branch-name">فرع اللاذقية</h3>
+<div class="branch-body">
+<p class="branch-address">شارع 8 آذار</p>
+<div class="branch-hours"><span class="hours-label">أوقات الدوام</span><span class="hours-time">9:00 صباحاً - 6:00 مساءً</span></div>
+</div>
+</div>
+
+</div>
+
+<h2>أيام الدوام</h2>
+<div class="week">
+<div class="day open">السبت<small>دوام</small></div>
+<div class="day open">الأحد<small>دوام</small></div>
+<div class="day open">الاثنين<small>دوام</small></div>
+<div class="day open">الثلاثاء<small>دوام</small></div>
+<div class="day open">الأربعاء<small>دوام</small></div>
+<div class="day open">الخميس<small>دوام</small></div>
+<div class="day closed">الجمعة<small>عطلة</small></div>
+</div>
+<p class="week-note">أوقات الدوام المذكورة في بطاقات الفروع تنطبق على جميع أيام الدوام.</p>
+
+</div>
+<div class="footer">جميع الحقوق محفوظة &#169; 2026 - مكتب الأمان لتأجير السيارات</div>
+</body>
+</html>

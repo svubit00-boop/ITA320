@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>الصفحة الرئيسية</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+/* ===== تنسيق خاص بالصفحة الرئيسية فقط ===== */
+
+/* بطاقة الترحيب */
+.hero { background: linear-gradient(135deg, var(--bg-1), var(--bg-2)); color: #ffffff; border-radius: 14px; padding: 36px 32px; margin-bottom: 30px; border-right: 8px solid var(--primary); }
+.hero h2 { color: #ffffff; border-right: none; padding-right: 0; margin: 0 0 10px 0; font-size: 28px; }
+.hero p { color: #e2e8f0; margin: 0 0 22px 0; max-width: 560px; }
+
+
+/* بطاقات بيانات الطالب */
+.student-card { display: flex; flex-wrap: wrap; gap: 14px; margin: 15px 0 25px 0; }
+.student-item { flex: 1; min-width: 200px; background-color: var(--soft); border: 1px solid var(--line); border-top: 4px solid var(--primary); border-radius: 10px; padding: 14px 18px; text-align: center; }
+.student-label { display: block; color: var(--muted); font-size: 13px; text-align: center; }
+.student-value { display: block; color: var(--text); font-size: 18px; font-weight: bold; text-align: center; }
+
+/* صندوق رابط النشر */
+.link-box { background-color: var(--soft); border: 1px dashed var(--primary); border-radius: 10px; padding: 14px 18px; margin: 15px 0 25px 0; direction: ltr; text-align: center; }
+.link-box a { font-weight: bold; text-decoration: none; }
+.link-box a:hover { text-decoration: underline; }
+
+/* قائمة الملاحظات */
+.notes-list { list-style: none; padding: 0; margin: 15px 0; }
+.notes-list li { background-color: #f8fafc; border-right: 4px solid var(--accent); border-radius: 8px; padding: 10px 16px; margin-bottom: 10px; }
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+<div id="header"><h1>مكتب الأمان لتأجير السيارات</h1></div>
+<div id="nav">
+<a href="home.html" class="active">الرئيسية</a>
+<a href="AboutUs.html">من نحن</a>
+<a href="Cars.html">السيارات</a>
+</div>
+<div id="content">
+
+<div class="hero">
+<h2>احجز سيارتك بسهولة وبأسعار واضحة</h2>
+<p>اختر من بين سيارات حديثة، واحسب تكلفة الإيجار فوراً مع خصم تلقائي للمدد الطويلة.</p>
+<a class="btn-link" href="Cars.html">ابدأ الحجز الآن</a>
+</div>
+
+<h2>بيانات الطالب</h2>
+<div class="student-card">
+<div class="student-item"><span class="student-label">الاسم بالعربية</span><span class="student-value">عبد الهادي حاج احمد</span></div>
+<div class="student-item"><span class="student-label">Name in English</span><span class="student-value">Abdulhadi Haj ahmad</span></div>
+<div class="student-item"><span class="student-label">الرقم الجامعي</span><span class="student-value">319122</span></div>
+</div>
+
+<h2>رابط النشر على الإنترنت</h2>
+<div class="link-box">
+<a href="https://example.com/CarRental/home.html">https://svu123.github.io/iwb201/home.html</a>
+</div>
+
+<h2>ملاحظات</h2>
+<ul class="notes-list">
+<li>الموقع مبني بلغة XHTML 1.0 Strict مع ملف تنسيق واحد style.css وملف جافا سكربت واحد myFunctions.js.</li>
+<li>تم استخدام مكتبة jQuery لإظهار وإخفاء تفاصيل السيارات.</li>
+<li>الصور المستخدمة بصيغة SVG وحجمها صغير جداً.</li>
+</ul>
+
+</div>
+<div class="footer">جميع الحقوق محفوظة &#169; 2026 - مكتب الأمان لتأجير السيارات</div>
+</body>
+</html>
